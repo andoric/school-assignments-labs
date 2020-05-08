@@ -1,0 +1,11 @@
+My test plan is to write all the methods and constructors etc, and then test various inputs to ensure the program works
+appropriately. I will test that the output matches the sample output, that the error checking for marks being between 0-100 works
+at every stage, that the error checking works for bonuses being no greater than 5 works as well, and that the failing grades are caught
+regardless of whether the failing grade is marks[1], marks[2], or marks[3].
+
+All for loops work successfully and execute the proper number of times. The outputs make sense for the user and do not use the begins
+at 0 numbering of programming. 
+
+For the interest of proper formatting and space, if a firstname+lastname value is greater than 16 characters, this will make the 
+formatting for that line not look nice. I could increase the cap on this, but the formatting would be wider than the sample given 
+in this case.

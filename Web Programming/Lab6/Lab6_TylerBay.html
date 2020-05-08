@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Week 6 Lab - JavaScript DOM and Arrays</title>
+        <meta charset="utf-8">
+        <style>
+            h2{
+                text-align:center
+
+            }
+            h3{
+                text-align:center
+
+            }
+            table{
+                
+                margin: auto;
+                
+            }
+            body{
+                background-color:wheat;
+            }
+            .required{
+                color:red;
+            }
+           
+
+
+
+        </style>
+
+    </head>
+    <body>
+        <h2>Order Form</h2>
+        <h3>Fields Marked with <span class = "required">*</span> are required</h3>
+        <form name="orderForm" id = "orderForm" method="post" action="processForm_TylerBay.html">
+        <table>
+            <tr>
+                <th colspan="2">Personal Information</th>
+            </tr>
+            <tr>
+                <td><span class = "required">*</span>First Name:</td>
+                <td><input type="text" name="firstName" id="firstName" size="30"></td>
+            </tr>
+            <tr>
+                <td><span class = "required">*</span>Last Name:</td>
+                <td><input type="text" name="lastName" id="lastName" size="30"></td>
+            </tr>
+            <tr>
+                <td><span class = "required">*</span>Address:</td>
+                <td><input type="text" name="address" id="address" size="30"></td>
+            </tr>
+            <tr>
+                <td><span class = "required">*</span>City:</td>
+                <td><input type="text" name="city" id="city" size="30"></td>
+            </tr>
+            <tr>
+                <td><span class = "required">*</span>Province:</td>
+                <td><select name="province" id="province" size="1">
+                        <option disabled>Select a province</option>
+                        <option value="BC">British Columbia</option>
+                        <option value="AB">Alberta</option>
+                        <option value="SK">Saskatchewan</option>
+                        <option value="MB">Manitoba</option>
+                        <option value="ON">Ontario</option>
+                        <option value="QC">Québec</option>
+                        <option value="NB">New Brunswick</option>
+                        <option value="NS">Nova Scotia</option>
+                        <option value="PE">Prince Edward Island</option>
+                        <option value="NF">Newfoundland</option>
+                        <option value="YK">Yukon</option>
+                        <option value="NWT">Northwest Territories</option>
+                        <option value="NU">Nunavut</option>
+                    </select>
+                </td>
+            </tr>
+            <tr>
+                <td><span class = "required">*</span>Postal Code:</td>
+                <td><input type="text" name="postalCode" id="postalCode" maxlength="6" minlength="6"></td>
+            </tr>
+            <tr>
+                <th colspan="2">Order Information</th>
+            </tr>
+            <tr>
+                <td rowspan="9">Select your products:<br>
+                    <span id="productError" class="required"><br />*You must order <br /> at least 1 from <br /> Widgets 1, 3, and 5</span></td>
+                <td>Widget #1&nbsp;
+                    <input type="text" name="widget1qty" id="widget1qty" size="1" value="0">Qty @ <strong>$5.00/ea</strong></td>
+            </tr>
+            <tr>
+                <td>Widget #2&nbsp;
+                    <input type="text" name="widget2qty" id="widget2qty" size="1" value="0">Qty @ <strong>$15.00/ea</strong></td>
+            </tr>
+            <tr>
+                <td>Widget #3&nbsp;
+                    <input type="text" name="widget3qty" id="widget3qty" size="1" value="0">Qty @ <strong>$25.00/ea</strong></td>
+            </tr>
+            <tr>
+			</tr>
+            <tr>
+                <td>Widget #4&nbsp;
+                    <input type="text" name="widget4qty" id="widget4qty" size="1" value="0">Qty @ <strong>$25.00/ea</strong></td>
+            </tr>
+            <tr>
+			</tr>
+            <tr>
+                <td>Widget #5&nbsp;
+                    <input type="text" name="widget5qty" id="widget5qty" size="1" value="0">Qty @ <strong>$25.00/ea</strong></td>
+            </tr>
+            <tr>
+			</tr>
+            <tr>
+                <td>Widget #6&nbsp;
+                    <input type="text" name="widget6qty" id="widget6qty" size="1" value="0">Qty @ <strong>$25.00/ea</strong></td>
+            </tr>
+            <tr>
+                <td rowspan="3"><span class = "required">*</span>Shipping Type:</td>
+                <td>Standard ($5.00)<input type="radio" name="shippingType" id="shippingTypeStandard" value="Standard" checked></td>
+
+            </tr>
+            <tr>
+                <td>Express ($10.00)<input type="radio" name="shippingType" id="shippingTypeExpress" value="Express"></td>
+            </tr>
+            <tr>
+                <td>Overnight ($20.00)<input type="radio" name="shippingType" id="shippingTypeOvernight" value="Overnight"></td>
+            </tr>
+            <tr>
+                <th colspan="2">Submit Order</th>
+            </tr>
+            <tr>
+                <td><input type="submit" name="btnSubmit" id="btnSubmit" value="Submit Order"></td>
+                <td><input type="reset" name="btnReset" id="btnReset" value="Reset Form"></td>
+            </tr>
+        </table>
+        </form>
+        <p id = "errorMessage"></p>
+        <script src="lab6_TylerBay.js"></script>
+    </body>
+</html>

@@ -1,0 +1,3 @@
+Customer name: Tyler Bay
+Customer Account number: 145-6767678
+Account Created: Wed Jan 01 00:00:00 EST 2020
